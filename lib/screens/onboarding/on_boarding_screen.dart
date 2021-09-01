@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:khareedo_farokht/screens/home/home_screen.dart';
+import 'package:khareedo_farokht/screens/main_screen/main_screen.dart';
 import 'package:khareedo_farokht/utils/colors.dart';
 import 'package:khareedo_farokht/widgets/custom_elevated_button.dart';
 import 'package:page_transition/page_transition.dart';
@@ -47,7 +47,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 onPressed: () => Navigator.pushReplacement(
                     context,
                     PageTransition(
-                        child: HomeScreen(),
+                        child: MainScreen(),
                         type: PageTransitionType.leftToRight)),
                 child: Text(
                   'Skip',
@@ -105,7 +105,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                               Navigator.pushReplacement(
                                   context,
                                   PageTransition(
-                                      child: HomeScreen(),
+                                      child: MainScreen(),
                                       type: PageTransitionType.leftToRight));
                             },
                           ),
